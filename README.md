@@ -8,3 +8,9 @@ ____
 * Moves counter
 * Control buttons
 * Win message modal
+____
+### TODO
+* timer
+* mobile version
+* start and pause buttons
+* Find 0/12

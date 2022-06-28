@@ -1,7 +1,8 @@
 const cards= document.querySelectorAll(".card");
 let firstCard, secondCard, count=1, pairs=0;
-let statuscard=false;
-let lock=false;
+let statuscard=false, lock=false;
+let start = document.querySelector(".start"), pause=document.querySelector(".pause"), restart=document.querySelector(".restart");
+let sec=0, min=0, t=0;
 
 function flipCards(){
     if (lock) return;
@@ -66,3 +67,31 @@ function resetCards(){
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCards));
+
+let time = document.getElementById("Timer");
+function tick(){
+    sec++;
+    if (sec>=60){
+        sec=0;
+        min++;
+    }
+}
+
+function add(){
+    tick();
+    time.textContent=" Timer: "+ ( min > 9 ? min : "0" + min)+
+    ':' + (sec > 9 ? sec : "0" + sec);
+    timer();
+}
+function timer(){
+    t=setTimeout(add, 1000)
+}
+
+start.onclick=timer;
+pause.onclick=function(){
+    clearTimeout(t);
+}
+restart.onclick=function(){
+    sec=0; min=0;
+    time.textContent= " Timer: 00:00"
+}

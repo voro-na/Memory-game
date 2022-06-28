@@ -8,12 +8,13 @@
     <link  rel ="stylesheet" href="./style.css">
 </head>
 <footer>
-    <button>Start</button>
-    <button>Pause</button>
-    <a href="#" onclick="location.reload(); return false;">
+    <button class="start">Start</button>
+    <button class="pause">Pause</button>
+    <a href="#" class="restart" onclick="location.reload(); return false;">
         Restart
     </a>    
-    <div class="counter">move counter: 0</div>
+    <div class="counter">Move counter: 0</div>
+    <div class="counter" id = 'Timer'>Timer: 00:00</div>
 </footer>
 
 <body>
@@ -120,7 +121,7 @@
             <div>Win!</div>
             <div class="finalcounter"></div>
             <button class="closeButton">✕</button>
-            <a href="#" onclick="location.reload(); return false;">
+            <a href="#"  class='restart' onclick="location.reload(); return false;">
                 restart
             </a>
         </div>
