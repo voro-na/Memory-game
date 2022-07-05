@@ -4,13 +4,13 @@ Once all the cards are opened user is victorious.
 
 ____
 ### Features
+* timer
+* start, pause and reset buttons
 * Animation of cards flipping
 * Moves counter
 * Control buttons
 * Win message modal
 ____
 ### TODO
-* timer
 * mobile version
-* start and pause buttons
 * Find 0/12
