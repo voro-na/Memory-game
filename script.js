@@ -1,10 +1,11 @@
 const cards= document.querySelectorAll(".card");
-let firstCard, secondCard, count=1, pairs=0;
+let firstCard, secondCard, count=1, pairs=0,FlagStart=0;
 let statuscard=false, lock=false;
 let start = document.querySelector(".start"), pause=document.querySelector(".pause"), restart=document.querySelector(".restart");
 let sec=0, min=0, t=0;
 
 function flipCards(){
+    if (FlagStart==0 ) return;
     if (lock) return;
     if (this === firstCard) return;
     this.classList.add('flip');
@@ -15,7 +16,9 @@ function flipCards(){
     }
     secondCard=this;
     statuscard=false;
-    document.querySelector(".counter").innerHTML="move counter: "+ count;
+
+    document.getElementById("count").innerHTML="Move counter: "+ count;
+    //document.querySelector(".counter").innerHTML="move counter: "+ count;
     count++;
     checkEqual(); 
 }
@@ -31,9 +34,11 @@ function equalcards(){
     secondCard.removeEventListener('click', flipCards);
     pairs++;
     if (pairs==12){
+        clearTimeout(t);
         document.querySelector(".win").classList.add("active");
         document.querySelector(".winMsg").classList.add("active");
-        document.querySelector(".finalcounter").innerHTML='Number of moves: '+count;
+        document.querySelector(".finalcounter").innerHTML='Number of moves: '+count +"<br/>Time:" + 
+        ( min > 9 ? min : "0" + min)+':' + (sec > 9 ? sec : "0" + sec);
 
         const closeButton=document.querySelector(".closeButton");
         closeButton.addEventListener('click', function(){
@@ -66,7 +71,7 @@ function resetCards(){
     )
 })();
 
-cards.forEach(card => card.addEventListener('click', flipCards));
+cards.forEach(card =>card.addEventListener('click', flipCards));
 
 let time = document.getElementById("Timer");
 function tick(){
@@ -87,11 +92,21 @@ function timer(){
     t=setTimeout(add, 1000)
 }
 
-start.onclick=timer;
+//start.onclick=timer;
+start.onclick=function(){
+    timer();
+    FlagStart=1;
+    document.querySelector(".counter").innerHTML="";
+}
 pause.onclick=function(){
     clearTimeout(t);
+    FlagStart=0;
+    document.querySelector(".counter").innerHTML="Click 'start' to continue playing";
 }
 restart.onclick=function(){
-    sec=0; min=0;
-    time.textContent= " Timer: 00:00"
+    sec=0; min=0, count=0;
+    document.querySelector(".counter").innerHTML="Click 'start' to start playing";
+    document.getElementById("count").innerHTML="Move counter: "+ count;
+    time.textContent= " Timer: 00:00";
+    timer;
 }
