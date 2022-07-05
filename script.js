@@ -105,8 +105,5 @@ pause.onclick=function(){
 }
 restart.onclick=function(){
     sec=0; min=0, count=0;
-    document.querySelector(".counter").innerHTML="Click 'start' to start playing";
-    document.getElementById("count").innerHTML="Move counter: "+ count;
-    time.textContent= " Timer: 00:00";
-    timer;
+    location.reload();
 }
