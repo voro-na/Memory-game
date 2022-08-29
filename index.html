@@ -5,129 +5,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link  rel ="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
-<footer>
-    <div class="counter" >Click "Start" to start playing</div>
+<header>
+    <div class="counter">Click "Start" to start playing</div>
     <button class="start">Start</button>
     <button class="pause">Pause</button>
     <a href="#" class="restart" onclick="location.reload(); return false;">
         Reset
-    </a>    
+    </a>
     <div class="counter" id="count">Move counter: 0</div>
-    <div class="counter" id = 'Timer'>Timer: 00:00</div>
-</footer>
+    <div class="counter" id='Timer'>Timer: 00:00</div>
+</header>
 
 <body>
-    <section class="game">
-        <div class="card" data-img="soup">
-            <img class="front" src="img/front.png">
-           <img class ="back" src="img/kisspng-ramen-pixel-art-japanese-cuisine-pastel-pixelart-5b12f28b5d9131.4872965415279683953833.png">
-       </div>
-        <div class="card" data-img="soup">
-             <img class="front" src="img/front.png">
-            <img class ="back" src="img/kisspng-ramen-pixel-art-japanese-cuisine-pastel-pixelart-5b12f28b5d9131.4872965415279683953833.png">
-        </div>
-        <div class="card" data-img="dog">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/kisspng-siberian-husky-pixel-art-drawing-pixelation-pixilart-my-dog-by-lindnenr-5b8eeb91b894c5.1634377415360930737561.png">
-        </div>
-        <div class="card"data-img="dog">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/kisspng-siberian-husky-pixel-art-drawing-pixelation-pixilart-my-dog-by-lindnenr-5b8eeb91b894c5.1634377415360930737561.png">
-        </div>
-        <div class="card" data-img="cat">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_grumpy-cat-png_2953425.png">
-        </div>
-        <div class="card"  data-img="cat">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_grumpy-cat-png_2953425.png">
-        </div>
-        <div class="card" data-img="horse">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_kawaii-pixel-png_1400590.png">
-        </div>
-        <div class="card" data-img="horse">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_kawaii-pixel-png_1400590.png">
-        </div>
-        <div class="card" data-img="psp">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_kawaii-pixel-png_1400614.png">
-        </div>
-        <div class="card"  data-img="psp">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_kawaii-pixel-png_1400614.png">
-        </div>
-        <div class="card"data-img="cat2">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_kawaii-pixel-png_1400649.png">
-        </div>
-        <div class="card" data-img="cat2">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_kawaii-pixel-png_1400649.png">
-        </div>
-        <div class="card" data-img="pizza">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_kawaii-pixel-png_1400888.png">
-        </div>
-        <div class="card" data-img="pizza">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_kawaii-pixel-png_1400888.png">
-        </div>
-        <div class="card" data-img="planet">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_kawaii-pixel-png_1401017.png">
-        </div>
-        <div class="card" data-img="planet">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_kawaii-pixel-png_1401017.png">
-        </div>
-        <div class="card" data-img="ponny">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_kawaii-pixel-png_1401125.png">
-        </div>
-        <div class="card" data-img="ponny">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_kawaii-pixel-png_1401125.png">
-        </div>
-        <div class="card" data-img="pokemon">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_kawaii-transparent-png_621490.png">
-        </div>
-        <div class="card" data-img="pokemon" >
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_kawaii-transparent-png_621490.png">
-        </div>
-        <div class="card" data-img="milk">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_pixel-mouse-png_3593377.png">
-        </div>
-        <div class="card" data-img="milk">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_pixel-mouse-png_3593377.png">
-        </div>
-        <div class="card" data-img="pokemon2">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_zorua-png_4801084.png">
-        </div>
-        <div class="card" data-img="pokemon2">
-            <img class="front" src="img/front.png">
-            <img class ="back" src="img/PikPng.com_zorua-png_4801084.png">
-        </div>
-    </section>
-    <div class="win">
-        <div class="winMsg">
-            <div>Win!</div>
-            <div class="finalcounter"></div>
-            <button class="closeButton">✕</button>
-            <a href="#"  class='restart' onclick="location.reload(); return false;">
-                Reset
-            </a>
-        </div>
+<section class="game">
+    <div class="card" data-img="soup">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card"
+             src="img/kisspng-ramen-pixel-art-japanese-cuisine-pastel-pixelart-5b12f28b5d9131.4872965415279683953833.png">
     </div>
+    <div class="card" data-img="soup">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card"
+             src="img/kisspng-ramen-pixel-art-japanese-cuisine-pastel-pixelart-5b12f28b5d9131.4872965415279683953833.png">
+    </div>
+    <div class="card" data-img="dog">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card"
+             src="img/kisspng-siberian-husky-pixel-art-drawing-pixelation-pixilart-my-dog-by-lindnenr-5b8eeb91b894c5.1634377415360930737561.png">
+    </div>
+    <div class="card" data-img="dog">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card"
+             src="img/kisspng-siberian-husky-pixel-art-drawing-pixelation-pixilart-my-dog-by-lindnenr-5b8eeb91b894c5.1634377415360930737561.png">
+    </div>
+    <div class="card" data-img="cat">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_grumpy-cat-png_2953425.png">
+    </div>
+    <div class="card" data-img="cat">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_grumpy-cat-png_2953425.png">
+    </div>
+    <div class="card" data-img="horse">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_kawaii-pixel-png_1400590.png">
+    </div>
+    <div class="card" data-img="horse">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_kawaii-pixel-png_1400590.png">
+    </div>
+    <div class="card" data-img="psp">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_kawaii-pixel-png_1400614.png">
+    </div>
+    <div class="card" data-img="psp">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_kawaii-pixel-png_1400614.png">
+    </div>
+    <div class="card" data-img="cat2">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_kawaii-pixel-png_1400649.png">
+    </div>
+    <div class="card" data-img="cat2">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_kawaii-pixel-png_1400649.png">
+    </div>
+    <div class="card" data-img="pizza">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_kawaii-pixel-png_1400888.png">
+    </div>
+    <div class="card" data-img="pizza">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_kawaii-pixel-png_1400888.png">
+    </div>
+    <div class="card" data-img="planet">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_kawaii-pixel-png_1401017.png">
+    </div>
+    <div class="card" data-img="planet">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_kawaii-pixel-png_1401017.png">
+    </div>
+    <div class="card" data-img="ponny">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_kawaii-pixel-png_1401125.png">
+    </div>
+    <div class="card" data-img="ponny">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_kawaii-pixel-png_1401125.png">
+    </div>
+    <div class="card" data-img="pokemon">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_kawaii-transparent-png_621490.png">
+    </div>
+    <div class="card" data-img="pokemon">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_kawaii-transparent-png_621490.png">
+    </div>
+    <div class="card" data-img="milk">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_pixel-mouse-png_3593377.png">
+    </div>
+    <div class="card" data-img="milk">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_pixel-mouse-png_3593377.png">
+    </div>
+    <div class="card" data-img="pokemon2">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_zorua-png_4801084.png">
+    </div>
+    <div class="card" data-img="pokemon2">
+        <img class="front" src="img/front.png" alt="background">
+        <img class="back" alt="card" src="img/PikPng.com_zorua-png_4801084.png">
+    </div>
+</section>
+<div class="win">
+    <div class="winMsg">
+        <div>Win!</div>
+        <div class="finalcounter"></div>
+        <button class="closeButton">✕</button>
+        <a href="#" class='restart' onclick="location.reload(); return false;">
+            Reset
+        </a>
+    </div>
+</div>
 
-    <script src="./script.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
